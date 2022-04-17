@@ -1,0 +1,128 @@
+body.lock {
+    overflow: hidden;
+}
+.popup {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.96);
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+.open {
+    opacity: 1;
+    visibility: visible;
+    .popup__content {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: end;
+}
+.popup__content {
+    padding: 40px 32px;
+    width: 440px;
+    height: 940px;
+    background: #fff;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    transform: translateX(100%);
+}
+.popup__title {
+    font-weight: 600;
+    font-family: $font-family_3;
+    font-size: 24px;
+    margin-bottom: 24px;
+    span {
+        position: relative;
+    }
+    hr {
+        left: -33px;
+        top: -5px;
+        position: absolute;
+        width: 3px;
+        height: 40px;
+        background-color: $color_9;
+        border: none;
+        border-radius: 3px;
+    }
+}
+.popup__text {
+    display: flex;
+}
+.contact_form {
+    input {
+        font-family: $font-family_1;
+        margin-bottom: 16px;
+        width: 376px;
+        height: 48px;
+        padding: 12px 16px;
+        border: 1px solid $color_8;
+        border-radius: 8px;
+    }
+    .popup_permission {
+        font-family: $font-family_3;
+        color: $color_4;
+        font-size: 14px;
+        margin-bottom: 23px;
+        a {
+            color: $color_6;
+            text-decoration: none;
+        }
+    }
+    .submit-container {
+        margin-left: 240px;
+        align-items: flex-end;
+        position: relative;
+    }
+    .submit {
+        text-align: left;
+        padding: 4px 0 4px 20px;
+        border: none;
+        font-size: 12px;
+        font-family: $font-family_2;
+        color: #fff;
+        display: flex;
+        width: 136px;
+        height: 32px;
+        background: $color_6;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+    .goside {
+        position: absolute;
+        top: 7px;
+        left: 100px;
+        width: 24px;
+        height: 24px;
+        background-image: url('../img/icons/goside.svg');
+        cursor: pointer;
+    }
+}
+.close-popup-btn {
+    position: relative;
+    .popup__close {
+        top: -5px;
+        left: -105px;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-image: url('../img/icons/close.svg');
+    }
+}
+#popup_call {
+    .contact_form {
+        .popup_permission {
+            margin-top: 0;
+        }
+    }
+}

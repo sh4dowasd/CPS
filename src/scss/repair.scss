@@ -1,0 +1,171 @@
+.grad {
+    width: 103%;
+    border-top: 1px solid #D9FFF5;
+	height: 56px;
+	text-transform: uppercase;
+    background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+    margin-bottom: 24px;
+	h1 {
+		line-height: 2;
+        font-family: $font-family_1;
+        color: $color_4;
+		font-size: 16px;
+		transform: translate(0, 40%);
+	}
+}
+.brands-slider__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr) );
+    column-gap: 32px;
+    row-gap: 16px;
+    margin-bottom: 24px;
+}
+.brand {
+    padding: 16px;
+    cursor: default;
+    display: flex;
+    height: 72px;
+    background: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    justify-content: space-between;
+}
+.go {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/go.svg);
+}
+.lenovo {
+    margin-top: 4px;
+    width: 108px;
+    height: 32px;
+    background-image: url(../img/brands/lenovo.svg);
+}
+.samsung {
+    width: 116px;
+    height: 38px;
+    background-image: url(../img/brands/samsung.svg);
+}
+.apple {
+    margin-top: -4px;
+    width: 44px;
+    height: 44px;
+    background-image: url(../img/brands/apple.svg);
+}
+.viewsonic {
+    margin-top: 10px;
+    margin-left: -2px;
+    width: 128px;
+    height: 21px;
+    background-image: url(../img/brands/viewsonic.svg);
+}
+.bosch {
+    margin-top: 5.7px;
+    width: 128px;
+    height: 28.6px;
+    background-image: url(../img/brands/bosch.svg);
+}
+.hp {
+    margin: -6px;
+    width: 52px;
+    height: 52px;
+    background-image: url(../img/brands/hp.svg);
+}
+.acer {
+    margin-top: 8px;
+    width: 94px;
+    height: 24px;
+    background-image: url(../img/brands/acer.svg);
+}
+.sony {
+    margin-top: 7px;
+    margin-left: -2px;
+    width: 128px;
+    height: 25.6px;
+    background-image: url(../img/brands/sony.svg);
+}
+.show-all-btn__container {
+	background: $color_5;
+	text-align: left;
+}
+.show-all-btn {
+	display: flex;
+	border: none;
+	cursor: pointer;
+	background-color: $color_5;
+	.expand {
+		width: 23px;
+	}
+	p {
+        font-family: $font-family_1;
+        font-weight: 600;
+		margin-left: 5px;
+		line-height: 1.7;
+	}
+}
+.el-3 {
+    visibility: visible;
+    opacity: 1;
+}
+.hide {
+visibility: hidden;
+opacity: 0;
+position: absolute!important;
+.expand {
+    transform: rotate(180deg);
+    line-height: 0.8;
+}
+}
+.technics-header {
+    margin-bottom: 40px;
+}
+.technics-slider__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr) );
+    column-gap: 32px;
+    row-gap: 16px;
+    margin-bottom: 20px;
+}
+.technics {
+    position: relative;
+    display: flex;
+    height: 160px;
+    background: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+.technics-text {
+    font-weight: 600;
+    margin: 16px;
+    color: $color_3;
+    font-family: $font-family_1;
+}
+.go2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 16px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/go.svg);
+}
+.show-all-btn__container-two {
+	background: $color_5;
+	text-align: left;
+}
+.show-all-btn-two {
+	display: flex;
+	border: none;
+	cursor: pointer;
+	background-color: $color_5;
+	.expand {
+		width: 23px;
+	}
+	p {
+        font-family: $font-family_1;
+        font-weight: 600;
+		margin-left: 5px;
+		line-height: 1.7;
+	}
+}

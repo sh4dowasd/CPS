@@ -1,0 +1,83 @@
+.upper-menu {
+	padding: 0 24px;
+	height: 88px;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	border-bottom: 1px solid #D9FFF5;
+	hr {
+		width: 2px;
+		height: 32px;
+		background-color: $color_8;
+		border: none;
+		transform: translate(0, 15%);
+	}
+}
+.upper-open {
+    opacity: 1;
+    visibility: visible;
+	position: relative;
+}
+.upper-menu-left {
+	display: flex;
+	transform: translate(0, 30%);
+	.logo {
+		margin: 0;
+		width: 96.55px;
+		height: 50.81px;
+		transform: translate(0, -17%);
+		background-image: url('../img/logo.svg');
+	}
+	hr {
+		margin: 0 20px;
+	}
+}
+.upper-menu-right {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	transform: translate(8px, 30%);
+	hr {
+		margin: 0 4px 0 20px;
+	}
+	.repair-icon {
+		width: 40px;
+		height: 40px;
+		background-image: url('../img/icons/repair.svg');
+	}
+	.checkstatus-icon {
+		width: 40px;
+		height: 40px;
+		background-image: url('../img/icons/checkstatus.svg');
+	}
+}
+.hamburger {
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/icons/burger.svg');
+}
+.upper-icons-right {
+    display: grid;
+	grid-template-columns: repeat(3, 0.3fr);
+	column-gap: 16px;
+}
+.upper-icons-left {
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 16px;
+}
+.upper-contacts-icon {
+    width: 40px;
+    height: 42px;
+	.chat-copy {
+		background-image: url('../img/icons/chat_copy.svg');
+	}
+	.chat {
+		background-image: url('../img/icons/chat.svg');
+	}
+	.profile {
+		background-image: url('../img/icons/profile.svg');
+	}
+}
