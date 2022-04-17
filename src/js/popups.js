@@ -9,7 +9,6 @@ const popup = document.querySelectorAll('.popup')
 const body = document.querySelector('body')
 const lContainer = document.querySelector('.left-container')
 const closebtn = document.querySelector('.popup__close-left')
-const mediaQuery = window.matchMedia('(max-width: 1108px)')
 
 let unlock = true
 var lock = false
@@ -70,7 +69,7 @@ function bodyUnLock() {
     }, timeout);
 }
 
-if (mediaQuery.matches) {
+if (window.innerWidth <= 1108) {
     lock = true
 }else {
     lock = false

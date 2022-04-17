@@ -36,9 +36,6 @@
 	}
 }
 .upper-menu-right {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	transform: translate(8px, 30%);
 	hr {
 		margin: 0 4px 0 20px;
 	}
@@ -57,16 +54,6 @@
 	width: 40px;
 	height: 40px;
 	background-image: url('../img/icons/burger.svg');
-}
-.upper-icons-right {
-    display: grid;
-	grid-template-columns: repeat(3, 0.3fr);
-	column-gap: 16px;
-}
-.upper-icons-left {
-    display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	column-gap: 16px;
 }
 .upper-contacts-icon {
     width: 40px;
