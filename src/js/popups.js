@@ -79,7 +79,6 @@ if (mediaQuery.matches) {
 if(lock === true) {
         closebtn.classList.add('left-open')
     }else {
-        console.log(lock)
         closebtn.classList.remove('left-open')
     }
 
