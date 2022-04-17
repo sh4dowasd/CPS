@@ -8,18 +8,10 @@
 // }
 /* Medium Devices, Desktops */
 @media (max-width: 992px) {
-  .header-menu {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
+  .main-section {
+    max-width: 992px;
   }
-  .services {
-    display: flex;
-    overflow: scroll;
-    button {
-      white-space: nowrap;
-    }
-  }
+  
 }
 // /* Small Devices, Tablets */
 // @media (max-width: 768px) {
@@ -27,74 +19,83 @@
 // }
 /* Extra Small Devices, Phones */
 @media (max-width: 480px) {
-  .upper-menu {
-    visibility: visible;
-    opacity: 1;
-  }
-  .upper-icons-left {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-  }
-  .upper-menu-left {
-    hr {
-      visibility: hidden;
-      opacity: 0;
-      position: absolute;
-      margin: 0;
-    }
-    .hamburger {
-      margin-right: 16px;
-    }
-  }
-  .upper-menu-right {
-    display: flex;
-    div {
-      margin-right: 16px;
-    }
+  .main-section {
+    max-width: 480px;
   }
 }
 /* Custom, iPhone Retina */
 @media (max-width: 320px) {
-  
+  .main-section {
+    max-width: 320px;
+  }
 }
 /*==========  Mobile First  ========== */
 /* Custom, iPhone Retina */
 @media (min-width: 320px) {
-  
+  .header-menu {
+    display: none;
+  }
+  .services {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+  .services-content {
+    display: flex;
+  }
+  .upper-menu-left {
+    hr {
+      display: none;
+    }
+  }
+  .main-container {
+    padding: unset;
+    padding: 24px 16px 0 16px;
+  }
+  .upper-menu {
+    padding: unset;
+    padding-left: 16px;
+  }
+  .upper-menu-left {
+    hr {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    }
+    .hamburger {
+    margin-right: 16px;
+    }
+    .preview-image {
+      display: flex;
+      justify-content: center!important;
+      order: 1;
+      }
+    .upper-icons-left {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+    }
+    }
+  .idea {
+    flex-direction: column;
+    .idea-text {
+      max-width: 100%!important;
+      order: 2;
+    }
+  }
 }
 /* Extra Small Devices, Phones */
 @media (min-width: 480px) {
-  hr {
-    visibility: visible;
-    opacity: 1;
-  }
-  .upper-icons-right {
-    display: grid;
-    grid-template-columns: repeat(3, 0.3fr);
-    column-gap: 16px;
-  }
-  .upper-icons-left {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 16px;
-  }
-  .upper-menu-right {
-    display: grid;
-	  grid-template-columns: 1fr 1fr;
-	  transform: translate(8px, 30%);
-  }
+ 
 }
 // /* Small Devices, Tablets */
-// @media (min-width: 768px) {
-//   /* */
-// }
+@media (min-width: 768px) {
+  /* */
+}
 /* Medium Devices, Desktops */
 @media (min-width: 992px) {
-  .header-menu {
-    visibility: visible;
-    opacity: 1;
-  }
+  
 }
 
 /*# sourceMappingURL=adaptive.css.map */

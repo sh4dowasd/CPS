@@ -15,7 +15,6 @@
 //   background-color: $bgColor;
 //   color: $text;
 // }
-@import 'adaptive';
 @import 'main';
 @import 'services';
 @import '../fonts/stylesheet.css';
@@ -24,3 +23,4 @@
 @import 'left_section';
 @import 'popups';
 @import 'upper';
+@import 'adaptive';
