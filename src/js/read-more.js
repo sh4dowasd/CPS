@@ -23,27 +23,29 @@ if (window.innerWidth <= 768) {
     readMoreBtn.addEventListener('click', (e) => {
         el_3.classList.toggle('hide').remove
         el_2.classList.toggle('hide').remove
-    if(text1.innerText === 'Читать далее'){
-        text1.innerText = 'Скрыть'
-        ex_1.style.transform = 'rotate(180deg)'
-
-    }else {
-        text1.innerText = 'Читать далее'
-        ex_1.style.transform = 'rotate(0)'
-    }
+        if(text1.innerText === 'Читать далее'){
+            text1.innerText = 'Скрыть'
+            ex_1.style.transform = 'rotate(180deg)'
+    
+        }else {
+            text1.innerText = 'Читать далее'
+            ex_1.style.transform = 'rotate(0)'
+        }
     })
 }
-readMoreBtn.addEventListener('click', (e) => {
-    el_3.classList.toggle('hide').remove
-    if(text1.innerText === 'Читать далее'){
-        text1.innerText = 'Скрыть'
-        ex_1.style.transform = 'rotate(180deg)'
-
-    }else {
-        text1.innerText = 'Читать далее'
-        ex_1.style.transform = 'rotate(0)'
-    }
-})
+if (window.innerWidth > 768) {
+    readMoreBtn.addEventListener('click', (e) => {
+        el_3.classList.toggle('hide').remove
+        if(text1.innerText === 'Читать далее'){
+            text1.innerText = 'Скрыть'
+            ex_1.style.transform = 'rotate(180deg)'
+    
+        }else {
+            text1.innerText = 'Читать далее'
+            ex_1.style.transform = 'rotate(0)'
+        }
+    })
+}
 
 // Show All 1
 
