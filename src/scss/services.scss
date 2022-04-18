@@ -1,3 +1,31 @@
+@media (min-width: 320px) {
+    .services-content {
+        display: flex;
+        white-space: nowrap;
+        overflow-x: scroll;
+	    scrollbar-width: none;
+        position: relative;
+    }
+    .services-content::before {
+        content: '';
+        position: fixed;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        width: 24px;
+        height: 39px;
+        right: 10px;
+    }
+}
+@media (min-width: 768px) {
+    .services-content {
+        display: inline-block;
+        flex-direction:row;
+        overflow-x: hidden;
+        white-space: normal;
+        li {
+            display: inline;
+        }
+    }
+}
 .services-content {
     list-style-type: none; 
     margin-bottom: 24px;
