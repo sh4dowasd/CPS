@@ -1,3 +1,8 @@
+@media (max-width: 360px) {
+    .left-menu {
+        margin-bottom: unset!important;
+      }
+}
 .left-section {
     z-index: 2;
 }
@@ -55,7 +60,7 @@
         transition: all .3s ease-in-out;
     }
     hr {
-        left: -24px;
+        left: -20px;
         bottom: -3px;
         position: absolute;
         width: 4px;
@@ -67,8 +72,8 @@
         visibility: hidden;
         transition: all .3s ease-in-out;
     }
-    li:hover {
-        a {
+    li:hover, li:active {
+        button {
         color: $color_4;
         }
         hr {

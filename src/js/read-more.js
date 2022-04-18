@@ -86,6 +86,17 @@ if (window.innerWidth <= 768) {
     t_2.classList.toggle('hide').remove
 }
 
+if(window.innerWidth <= 1007) {
+    bl_2.forEach( x => x.classList.toggle('hide'))
+    t_2.classList.toggle('hide')
+    showAllBtn.addEventListener('click', (e)=> {
+        bl_2.forEach( x => x.classList.toggle('hide').remove)
+    })
+    showAllBtnTwo.addEventListener('click', (e)=> {
+        t_2.classList.toggle('hide').remove
+    })
+}
+
 if(window.innerWidth <= 1119) {
     bl_2.forEach( x => x.classList.toggle('hide').remove)
     t_2.classList.toggle('hide').remove

@@ -26,7 +26,11 @@
     visibility: hidden;
     transition: all .3s ease-in-out;
     .left-container {
+      max-width: 360px;
+      min-width: 320px;
+      width: 100%;
       transform: translateX(-100%);
+      box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
     }
     .popup__close-left {
       display: unset!important;
@@ -66,6 +70,15 @@
     display: flex;
     white-space: nowrap;
     overflow-x: scroll;
+    position: relative;
+  }
+  .services-content::before {
+    content: '';
+    position: fixed;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px;
+    height: 39px;
+    right: 10px;
   }
   .upper-menu-left {
     margin-right: 16px;
@@ -125,6 +138,19 @@
       min-width: 220px;
     }
   }
+  .brands-slider {
+    position: relative;
+  }
+  .brands-slider::before {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px;
+    height: 72px;
+    top: 0;
+    right: -16px;
+  }
   .technics-slider__wrapper {
     display: flex;
     column-gap: 32px;
@@ -133,6 +159,19 @@
     .technics-slider__slide {
       min-width: 220px;
     }
+  }
+  .technics-slider {
+    position: relative;
+  }
+  .technics-slider::before {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px;
+    height: 160px;
+    top: 0;
+    right: -16px;
   }
   .show-all-btn__container {
     display: none;
@@ -156,6 +195,9 @@
 }
 // /* Small Devices, Tablets */
 @media (min-width: 768px) {
+  .main-section {
+    overflow: hidden;
+  }
   .idea {
     flex-direction: unset;
     display: flex;

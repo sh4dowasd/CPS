@@ -1,13 +1,15 @@
 const lPopupBtn = document.querySelector('.hamburger')
-const feedPopupBtn = document.querySelectorAll('.popup-feedback-up')
-const CallPopupBtn = document.querySelectorAll('.popup-call-up')
+const feedPopupBtn = document.querySelectorAll('.popup-feedback')
+const CallPopupBtn = document.querySelectorAll('.popup-call')
 const closeBtn = document.querySelectorAll('.close-popup')
 const lPopup = document.querySelector('.left-popup')
 const feedPopup = document.querySelector('.popup_feedback')
 const CallPopup = document.querySelector('.popup_call')
 const popup = document.querySelectorAll('.popup')
 const body = document.querySelector('body')
+const html = document.querySelector('html')
 const lContainer = document.querySelector('.left-container')
+const lSection = document.querySelector('.left-section')
 const closebtn = document.querySelector('.popup__close-left')
 
 let unlock = true
@@ -26,15 +28,17 @@ lPopupBtn.addEventListener('click', (e) => {
 feedPopupBtn.forEach(x => x.addEventListener('click', (e) => {
     lPopup.classList.remove('open')
     feedPopup.classList.toggle('open')
+    window.scrollTo(0, 0)
+    lSection.scrollTo(0, 0)
     bodyLock()
-    console.log('bug')
 }))
 
 CallPopupBtn.forEach(x => x.addEventListener('click', (e) => {
     lPopup.classList.remove('open')
     CallPopup.classList.toggle('open')
+    window.scrollTo(0, 0)
+    lSection.scrollTo(0, 0)
     bodyLock()
-    console.log('bug')
 }))
 
 closeBtn.forEach(x => x.addEventListener('click', (e) => {
@@ -54,7 +58,9 @@ closebtn.addEventListener('click', (e) => {
 })
 
 function bodyLock() {
-    body.classList.add('lock')
+    setTimeout(() => {
+        body.classList.add('lock')
+    }, 800)
 
     unlock = false
     setTimeout(() => {

@@ -56,8 +56,8 @@
                 </div>
                 <div class="main-section__menu-right upper-menu-right">
                     <div class="main-section__icons upper-icons-left">
-                        <button class="upper-contacts-icon chat-copy popup-call-up"></button>
-                        <button class="upper-contacts-icon chat popup-feedback-up"></button>
+                        <button class="upper-contacts-icon chat-copy popup-call"></button>
+                        <button class="upper-contacts-icon chat popup-feedback"></button>
                         <button class="upper-contacts-icon profile"></button>
                     </div>
                     <div class="main-section__icons upper-icons-right">
@@ -306,7 +306,7 @@
                     <button class="popup__close close-popup"><div class="close"></div></button>
                 </div>
                 <div class="popup__title">
-                    <span><hr><p>Обратная связь</p></span>
+                    <div class="popup__header"><hr><p>Обратная связь</p></div>
                 </div>
                 <div class="popup__text">
                     <form class="popup__text_contact_form contact_form"> 
@@ -320,7 +320,12 @@
                         <input class="comment" name="comment" placeholder="Сообщение" required="" tabindex="4" type="text"> 
                         <p class="contact"><label for="comment"></label></p> <br>
                         <p class="popup_permission">Нажимая “отправить”, вы даете согласие на<button class="popup-pers"> обработку персональных данных</button> и соглашаетесь с нашей<button class="popup-copy"> политикой конфиденциальности</button></p>
-                        <div class="submit-container"><input name="submit" class="submit" tabindex="5" value="ОТПРАВИТЬ" type="submit"><div class="goside"></div></div>	 
+                        <div class="submit-container">
+                            <div class="submit-btn">
+                                <input name="submit" class="submit" tabindex="5" value="ОТПРАВИТЬ" type="submit">
+                                <div class="goside"></div>
+                            </div>
+                        </div>	 
                     </form> 
                 </div>
             </div>
@@ -333,14 +338,19 @@
                     <button class="popup__close close-popup"><div class="close"></div></button>
                 </div>
                 <div class="popup__title">
-                    <span><hr><p>Заказать звонок</p></span>
+                    <div class="popup__header"><hr><p>Заказать звонок</p></div>
                 </div>
                 <div class="popup__text">
                     <form class="popup__text_contact_form contact_form"> 
                         <p class="contact"><label for="Subject"></label></p> 
                         <input class="phone" name="phone" placeholder="Телефон" required="" tabindex="2" type="text">
                         <p class="popup_permission">Нажимая “отправить”, вы даете согласие на<button class="popup-pers"> обработку персональных данных</button> и соглашаетесь с нашей<button class="popup-copy"> политикой конфиденциальности</button></p>
-                        <div class="submit-container"><input name="submit" class="submit" tabindex="5" value="ОТПРАВИТЬ" type="submit"><div class="goside"></div></div>	 
+                        <div class="submit-container">
+                            <div class="submit-btn">
+                                <input name="submit" class="submit" tabindex="5" value="ОТПРАВИТЬ" type="submit">
+                                <div class="goside"></div>
+                            </div>
+                        </div>	 
                     </form> 
                 </div>
             </div>

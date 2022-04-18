@@ -1,0 +1,68 @@
+$color_1: #c0c0c0;
+$color_2: #000;
+$color_3: #1B1C21;
+$color_4: #7E7E82;
+$color_5: #F8F8F8;
+$color_6: #FF3E79;
+$color_7: #B5B6BC;
+$color_8: #EAEAEA;
+$color_9: #41F6D7;
+$font-family_1: "TT Lakes Regular";
+$font-family_2: "TT Lakes Bold";
+$font-family_3: "TT Lakes Medium";
+$background-color_1: rgba(0, 0, 0, 0);
+$background-color_2: rgba(0, 0, 0, 0.09);
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	&:before {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	&:after {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	&:focus {
+		outline: none;
+	}
+	&::-webkit-input-placeholder {
+		color: $color_1;
+		opacity: 1;
+	}
+	&:-moz-placeholder {
+		color: $color_1;
+		opacity: 1;
+	}
+	&::-moz-placeholder {
+		color: $color_1;
+		opacity: 1;
+	}
+	&:-ms-input-placeholder {
+		color: $color_1;
+		opacity: 1;
+	}
+}
+body {
+	cursor: default;
+	font-size: 16px;
+	font-family: $font-family_1;
+	overflow-x: hidden;
+	opacity: 1;
+	color: $color_3;
+}
+html {
+	scroll-behavior: smooth;
+	letter-spacing: -0.2px;
+}
+img {
+	width: 100%;
+}
+button {
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+}
