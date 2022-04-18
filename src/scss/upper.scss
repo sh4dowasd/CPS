@@ -4,9 +4,6 @@
 	background: #fff;
 	display: flex;
 	justify-content: space-between;
-	opacity: 0;
-	visibility: hidden;
-	position: absolute;
 	border-bottom: 1px solid #D9FFF5;
 	hr {
 		width: 2px;
@@ -15,11 +12,6 @@
 		border: none;
 		transform: translate(0, 15%);
 	}
-}
-.upper-open {
-    opacity: 1;
-    visibility: visible;
-	position: relative;
 }
 .upper-menu-left {
 	display: flex;
@@ -36,6 +28,7 @@
 	}
 }
 .upper-menu-right {
+	display: flex;
 	hr {
 		margin: 0 4px 0 20px;
 	}

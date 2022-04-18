@@ -1,6 +1,6 @@
 const lPopupBtn = document.querySelector('.hamburger')
-const feedPopupBtn = document.querySelector('.popup-feedback-up')
-const CallPopupBtn = document.querySelector('.popup-call-up')
+const feedPopupBtn = document.querySelectorAll('.popup-feedback-up')
+const CallPopupBtn = document.querySelectorAll('.popup-call-up')
 const closeBtn = document.querySelectorAll('.close-popup')
 const lPopup = document.querySelector('.left-popup')
 const feedPopup = document.querySelector('.popup_feedback')
@@ -23,15 +23,19 @@ lPopupBtn.addEventListener('click', (e) => {
     bodyLock()
 })
 
-feedPopupBtn.addEventListener('click', (e) => {
+feedPopupBtn.forEach(x => x.addEventListener('click', (e) => {
+    lPopup.classList.remove('open')
     feedPopup.classList.toggle('open')
     bodyLock()
-})
+    console.log('bug')
+}))
 
-CallPopupBtn.addEventListener('click', (e) => {
+CallPopupBtn.forEach(x => x.addEventListener('click', (e) => {
+    lPopup.classList.remove('open')
     CallPopup.classList.toggle('open')
     bodyLock()
-})
+    console.log('bug')
+}))
 
 closeBtn.forEach(x => x.addEventListener('click', (e) => {
     doUnlock = true
@@ -69,7 +73,7 @@ function bodyUnLock() {
     }, timeout);
 }
 
-if (window.innerWidth <= 1108) {
+if (window.innerWidth <= 1120) {
     lock = true
 }else {
     lock = false

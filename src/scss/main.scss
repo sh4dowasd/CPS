@@ -48,7 +48,6 @@ $background-color_2: rgba(0, 0, 0, 0.09);
 }
 body {
 	cursor: default;
-	height: 100%;
 	font-size: 16px;
 	font-family: $font-family_1;
 	overflow-x: hidden;
@@ -56,7 +55,6 @@ body {
 	color: $color_3;
 }
 html {
-	height: 100%;
 	letter-spacing: -0.2px;
 }
 img {
@@ -79,7 +77,6 @@ button {
 }
 .main-container {
 	margin: 0 auto;
-	padding: 42px 32px 21px 32px;
 }
 .main-header {
 	display: flex;
@@ -150,7 +147,6 @@ section.idea {
 	position: relative;
 	justify-content: flex-start;
 	border-radius: 5px;
-	padding-right: 34px;
 	margin-bottom: 14px;
 	p {
 		letter-spacing: 0.2px;
@@ -160,26 +156,22 @@ section.idea {
 	p:last-child {
 		margin: 0;
 	}
-	.idea-text {
-		max-width: 50%;
-		margin-right: 36px;
+	.preview-image {	
+		.el-3 {
+			visibility: visible;
+			opacity: 1;
+		}
+		img {
+			max-width: 532px;
+			max-height: 307px;
+			border-radius: 5px;
+		}
 	}
-	.preview-image {
-		
-	.el-3 {
-		visibility: visible;
-		opacity: 1;
-	}
-	img {
-		max-width: 532px;
-		max-height: 307px;
-		border-radius: 5px;
-	}
-}
 }
 .read-more-btn {
 	display: flex;
 	border: none;
+	margin-bottom: 10px;
 	cursor: pointer;
 	background-color: $color_5;
 	.expand {
@@ -198,15 +190,6 @@ section.idea {
 	background: $color_5;
 	text-align: left;
 }
-.hide {
-	visibility: hidden;
-	opacity: 0;
-	position: absolute;
-	.expand {
-		transform: rotate(180deg);
-		line-height: 0.8;
-	}
-}
 .footer {
     border-top: 1px solid #D9FFF5;
 	.container {
@@ -216,22 +199,54 @@ section.idea {
 		a {
 			text-decoration: none;
 		}
-		.developers {
+		p {
 			color: $color_4;
+		}
+		.developers {
 			max-width: 218px;
 			margin-right: auto;
 		}
 		.copyright {
-			color: $color_4;
 			max-width: 214px;
 		}
 		.copyright:hover {
 			color: $color_3;
 		}
 		.info {
-			color: $color_4;
 			margin-left: auto;
+			text-align: right;
 			max-width: 330px;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.footer {
+		display: flex;
+		.container {
+			display: flex;
+			flex-direction: column;
+			margin: unset;
+			p {
+				display: flex;
+				justify-content: center;
+				text-align: center;
+			}
+			.developers {
+				max-width: unset;
+				margin-right: unset;
+				margin-bottom: 16px;
+			}
+			.copyright {
+				max-width: unset;
+				margin-bottom: 16px;
+			}
+			.copyright:hover {
+				color: $color_3;
+			}
+			.info {
+				margin-left: unset;
+				max-width: unset;
+			}
 		}
 	}
 }

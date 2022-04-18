@@ -1,59 +1,211 @@
 .price_header {
     position: relative;
 }
-.price_table {
-    display: grid;
-    font-size: 14px;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 30px;
-    .d-tr {
-        display: grid;
-        grid-template-columns: 1fr 0.4fr 0.4fr 0.3fr;
+@media (max-width: 768px) {
+    // .price_table {
+    //     display: grid;
+    //     font-size: 14px;
+    //     width: 100%;
+    //     text-align: left;
+    //     margin-bottom: 30px;
+    //     .d-tr {
+    //         position: relative;
+    //         display: grid;
+    //         grid-template-columns: 1fr 0.4fr 0.4fr 0.3fr;
+    //     }
+    //     .d-td {
+    //         padding: 16px 0;
+    //         padding-right: 24px;
+    //         padding-left: 16px;
+    //         p {
+    //             transform: translate(0, 30%);
+    //         }
+    //     }
+    //     .d-td-name {
+    //         line-height:0;
+    //         position: absolute;
+    //     }
+    // }
+    // .price_case {
+    //     list-style-type: none;
+    // }
+    // .d-thead {
+    //     color: $color_4;
+    //     .d-tr {
+    //         grid-template-columns: 1fr 0.4fr 0.4fr 0.32fr;
+    //     }
+    // }
+    // .d-tbody {
+    //     color: $color_3;
+    //     border-radius: 6px;
+    //     background: #fff;
+    //     .d-td {
+    //         border-bottom: 1px solid $color_8;
+    //     }
+    // }
+    // .goside {
+    //     width: 24px;
+    //     height: 24px;
+    //     background-image: url('../img/icons/goside.svg');
+    //         transform: translate(10%, -15%);
+    // }
+    // .order-btn {
+    //     font-size: 12px;
+    //     border: none;
+    //     font-family: $font-family_2;
+    //     color: #fff;
+    //     display: flex;
+    //     width: 119px;
+    //     height: 32px;
+    //     background: $color_6;
+    //     border-radius: 16px;
+    //     cursor: pointer;
+    //     span {
+    //         display: flex;
+    //         transform: translate(15%, 25%);
+    //     }
+    // }
+    .price_header {
+        margin-bottom: 16px;
     }
-    .d-td {
-        padding: 16px 0;
-        padding-right: 24px;
-        padding-left: 16px;
-        p {
-            transform: translate(0, 30%);
+    .d-thead {
+        display: none;
+    }
+    .d-tbody {
+        display: flex;
+    }
+    .price_case {
+        list-style-type: none;
+        width: 260px;
+    }
+    .price-slider__wrapper {
+        display: flex;
+        column-gap: 16px;
+        margin-bottom: 16px;
+        .d-tr {
+            width: 260px;
+            height: 200px;
+            border-radius: 6px;
+            background: #fff;
+            padding: 16px 16px 4px 16px;
+            p {
+                font-size: 14px;
+            }
+            .d-td-name {
+                font-family: $font-family_3;
+                color: $color_4;
+            }
+            .d-td {
+                padding-bottom: 16px;
+            }
+            .d-td-btn {
+                position: relative;
+                right: 16px;
+                bottom: 16px;
+            }
+            .goside {
+                width: 24px;
+                height: 24px;
+                background-image: url('../img/icons/goside.svg');
+                transform: translate(10%, -15%);
+            }
+            .order-btn {
+                right: -16px;
+                top: -28px;
+                position: absolute;
+                font-size: 12px;
+                border: none;
+                font-family: $font-family_2;
+                color: #fff;
+                display: flex;
+                width: 119px;
+                height: 32px;
+                background: $color_6;
+                border-radius: 16px;
+                cursor: pointer;
+                span {
+                    display: flex;
+                    transform: translate(15%, 25%);
+                }
+            }
         }
     }
 }
-.d-thead {
-    color: $color_4;
-    .d-tr {
-        grid-template-columns: 1fr 0.4fr 0.4fr 0.32fr;
-    }
-}
-.d-tbody {
-    color: $color_3;
-    border-radius: 6px;
-    background: #fff;
-    .d-td {
-        border-bottom: 1px solid $color_8;
-    }
-}
-.goside {
-    width: 24px;
-    height: 24px;
-    background-image: url('../img/icons/goside.svg');
-		transform: translate(10%, -15%);
-}
-.order-btn {
-    font-size: 12px;
-    border: none;
-    font-family: $font-family_2;
-    color: #fff;
-    display: flex;
-    width: 119px;
-    height: 32px;
-    background: $color_6;
-    border-radius: 16px;
-    cursor: pointer;
-    span {
-        display: flex;
-		transform: translate(15%, 25%);
+@media (min-width: 768px) {
+    .price-slider__wrapper {
+        .d-thead {
+            display: grid;
+            color: $color_4;
+            .d-tr {
+                grid-template-columns: 1fr 0.4fr 0.4fr 0.3fr;
+            }
+            .d-td-btn {
+                visibility: hidden;
+            }
+        }
+        display: grid;
+        font-size: 14px;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 30px;
+        .case_1 {
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+        .case_5 {
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+        .case_1,
+        .case_2,
+        .case_3,
+        .case_4 {
+            .d-tr {
+                border-bottom: 1px solid $color_8;
+            }
+        }
+        .price_case {
+            list-style-type: none;
+            background: #fff;
+        }
+        .d-tr {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 0.4fr 0.4fr 0.3fr;
+        }
+        .d-td {
+            padding: 16px 0;
+            padding-right: 24px;
+            padding-left: 16px;
+            p {
+                transform: translate(0, 30%);
+            }
+        }
+        .d-td-name {
+            display: none;
+        }
+        .goside {
+            width: 24px;
+            height: 24px;
+            background-image: url('../img/icons/goside.svg');
+                transform: translate(10%, -15%);
+        }
+        .order-btn {
+            font-size: 12px;
+            border: none;
+            font-family: $font-family_2;
+            color: #fff;
+            display: flex;
+            width: 119px;
+            height: 32px;
+            background: $color_6;
+            border-radius: 16px;
+            cursor: pointer;
+            span {
+                display: flex;
+                transform: translate(15%, 25%);
+            }
+        }
     }
 }
 .footnote {
@@ -66,14 +218,16 @@
     font-family: $font-family_3;
     display: flex;
     margin-bottom: 50px;
+    .comerce_case {
+        display: flex;
+    }
     a {
         color: $color_3;
         text-decoration: none;
-        display: flex;
+        img {
+            width: 24px;
+            height: 24px;
+            transform: translate(0, 30%);
+        }
     }
-}
-.more {
-    width: 24px;
-    height: 24px;
-    background-image: url('../img/icons/more.svg');
 }
