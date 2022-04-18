@@ -2,10 +2,10 @@
     position: relative;
 }
 @media (max-width: 768px) {
-    .price-slider {
+    .table {
         position: relative;
       }
-      .price-slider::before {
+      .table::before {
         content: '';
         z-index: 2;
         position: absolute;
@@ -28,9 +28,12 @@
         list-style-type: none;
         width: 260px;
     }
+    .price-slider {
+        width: 260px;
+    }
     .price-slider__wrapper {
         display: flex;
-        column-gap: 16px;
+        column-gap: unset;
         margin-bottom: 16px;
         .d-tr {
             width: 260px;
