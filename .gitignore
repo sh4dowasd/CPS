@@ -1,5 +1,6 @@
 node_modules/
 src/
+dist/
 .editorconfig
 README.md
 package-lock.json

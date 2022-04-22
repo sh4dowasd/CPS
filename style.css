@@ -267,7 +267,9 @@ section.idea {
     white-space: nowrap;
     overflow-x: scroll;
     scrollbar-width: none;
-    position: relative; }
+    position: relative; } }
+
+@media (max-width: 768px) {
   .services-content::before {
     content: '';
     position: fixed;
