@@ -51,6 +51,7 @@ body.lock {
     visibility: hidden;
     transition: all .3s ease-in-out;
     overflow-y: auto;
+    scrollbar-width: none;
 }
 .open {
     opacity: 1;
