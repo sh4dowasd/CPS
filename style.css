@@ -48,6 +48,9 @@ html {
   scrollbar-width: none;
   letter-spacing: -0.2px; }
 
+html::-webkit-scrollbar {
+  display: none; }
+
 img {
   width: 100%; }
 
@@ -537,7 +540,7 @@ section.idea {
 .price_header {
   position: relative; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .table {
     position: relative; }
   .table::before {
@@ -805,8 +808,7 @@ section.idea {
 
 .left-icons {
   display: flex;
-  margin-bottom: 16.5px;
-  cursor: pointer; }
+  margin-bottom: 16.5px; }
 
 .left-contacts-icon {
   margin-right: 16px;
