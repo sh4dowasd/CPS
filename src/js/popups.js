@@ -23,22 +23,35 @@ lPopupBtn.addEventListener('click', (e) => {
     lContainer.style.transform = 'translateX(0)'
     lock = false
     bodyLock()
+    lPopup.addEventListener('click', (e) => {
+        if(!e.target.closest('.left-container')) {
+            lContainer.style.opacity = '0'
+            lContainer.style.transform = 'translateX(-100%)'
+            lPopup.classList.remove('open')
+        }
+    })
 })
 
 feedPopupBtn.forEach(x => x.addEventListener('click', (e) => {
-    lPopup.classList.remove('open')
     feedPopup.classList.toggle('open')
     window.scrollTo(0, 0)
-    lSection.scrollTo(0, 0)
     bodyLock()
+    feedPopup.addEventListener('click', (e) => {
+        if(!e.target.closest('.left-container')) {
+            popup.forEach(x => x.classList.remove('open'))
+        }
+    })
 }))
 
 CallPopupBtn.forEach(x => x.addEventListener('click', (e) => {
-    lPopup.classList.remove('open')
     CallPopup.classList.toggle('open')
     window.scrollTo(0, 0)
-    lSection.scrollTo(0, 0)
     bodyLock()
+    CallPopup.addEventListener('click', (e) => {
+        if(!e.target.closest('.left-container')) {
+            popup.forEach(x => x.classList.remove('open'))
+        }
+    })
 }))
 
 closeBtn.forEach(x => x.addEventListener('click', (e) => {

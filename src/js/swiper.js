@@ -4,7 +4,7 @@ const brandsSlider = document.querySelector('.brands-slider')
 const technicsSlider = document.querySelector('.technics-slider')
 const priceSlider = document.querySelector('.price-slider')
 
-if (window.innerWidth <= 768) {
+if (window.innerWidth <= 767) {
     new Swiper (brandsSlider, {
         slidesPerView: 1,
         spaceBetween: 16,

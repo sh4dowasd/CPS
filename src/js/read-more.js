@@ -81,7 +81,7 @@ showAllBtnTwo.addEventListener('click', (e)=> {
     }
 })
 
-if (window.innerWidth <= 768) {
+if (window.innerWidth <= 767) {
     bl_1.forEach( x => x.classList.toggle('hide').remove)
     bl_2.forEach( x => x.classList.toggle('hide').remove)
     t_1.forEach( x => x.classList.toggle('hide').remove)
