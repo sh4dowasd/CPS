@@ -35,7 +35,7 @@ lPopupBtn.addEventListener('click', (e) => {
 
 feedPopupBtn.forEach(x => x.addEventListener('click', (e) => {
     feedPopup.classList.toggle('open')
-    window.scrollTo(0, 0)
+    // window.scrollTo(0, 0)
     bodyLock()
     feedPopup.addEventListener('click', (e) => {
         if(!e.target.closest('.left-container')) {
@@ -52,7 +52,7 @@ feedPopupBtn.forEach(x => x.addEventListener('click', (e) => {
 
 CallPopupBtn.forEach(x => x.addEventListener('click', (e) => {
     CallPopup.classList.toggle('open')
-    window.scrollTo(0, 0)
+    // window.scrollTo(0, 0)
     bodyLock()
     CallPopup.addEventListener('click', (e) => {
         if(!e.target.closest('.left-container')) {

@@ -6,6 +6,9 @@
 	    scrollbar-width: none;
         position: relative;
     }
+    .services-content::-webkit-scrollbar {
+        display: none;
+    }
 }
 @media (max-width: 768px) { 
     .services-content::before {
