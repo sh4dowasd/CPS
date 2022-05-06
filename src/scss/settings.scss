@@ -59,6 +59,9 @@ html {
 	scrollbar-width: none;
 	letter-spacing: -0.2px;
 }
+html::-webkit-scrollbar {
+ 	display: none;
+}
 img {
 	width: 100%;
 }
