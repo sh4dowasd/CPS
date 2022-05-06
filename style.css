@@ -63,6 +63,8 @@ button {
   .main-section {
     overflow-y: scroll;
     overflow-x: hidden; }
+  .main-section::-webkit-scrollbar {
+    display: none; }
   .header-menu {
     display: none; }
   .main-container {
@@ -270,7 +272,9 @@ section.idea {
     white-space: nowrap;
     overflow-x: scroll;
     scrollbar-width: none;
-    position: relative; } }
+    position: relative; }
+  .services-content::-webkit-scrollbar {
+    display: none; } }
 
 @media (max-width: 768px) {
   .services-content::before {
@@ -876,7 +880,7 @@ body.lock {
 
 .popup {
   z-index: 3;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.96);
@@ -888,6 +892,9 @@ body.lock {
   overflow-y: auto;
   scrollbar-width: none; }
 
+.popup::-webkit-scrollbar {
+  display: none; }
+
 .open {
   opacity: 1;
   visibility: visible;
@@ -895,6 +902,9 @@ body.lock {
   .open .popup__content {
     transform: translateX(0px);
     opacity: 1; }
+
+.open::-webkit-scrollbar {
+  display: none; }
 
 .popup__body {
   min-height: 100%;

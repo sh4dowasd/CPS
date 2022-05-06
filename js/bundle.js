@@ -12927,8 +12927,8 @@ lPopupBtn.addEventListener('click', function (e) {
 });
 feedPopupBtn.forEach(function (x) {
   return x.addEventListener('click', function (e) {
-    feedPopup.classList.toggle('open');
-    window.scrollTo(0, 0);
+    feedPopup.classList.toggle('open'); // window.scrollTo(0, 0)
+
     bodyLock();
     feedPopup.addEventListener('click', function (e) {
       if (!e.target.closest('.left-container')) {
@@ -12949,8 +12949,8 @@ feedPopupBtn.forEach(function (x) {
 });
 CallPopupBtn.forEach(function (x) {
   return x.addEventListener('click', function (e) {
-    CallPopup.classList.toggle('open');
-    window.scrollTo(0, 0);
+    CallPopup.classList.toggle('open'); // window.scrollTo(0, 0)
+
     bodyLock();
     CallPopup.addEventListener('click', function (e) {
       if (!e.target.closest('.left-container')) {
