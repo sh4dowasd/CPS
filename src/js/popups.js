@@ -28,6 +28,7 @@ lPopupBtn.addEventListener('click', (e) => {
             lContainer.style.opacity = '0'
             lContainer.style.transform = 'translateX(-100%)'
             lPopup.classList.remove('open')
+            bodyUnLock()
         }
     })
 })
@@ -38,7 +39,13 @@ feedPopupBtn.forEach(x => x.addEventListener('click', (e) => {
     bodyLock()
     feedPopup.addEventListener('click', (e) => {
         if(!e.target.closest('.left-container')) {
-            popup.forEach(x => x.classList.remove('open'))
+            doUnlock = true
+            if(unlock) {
+                popup.forEach(x => x.classList.remove('open'))
+                if (doUnlock) {
+                    bodyUnLock()
+                }
+            }
         }
     })
 }))
@@ -49,7 +56,13 @@ CallPopupBtn.forEach(x => x.addEventListener('click', (e) => {
     bodyLock()
     CallPopup.addEventListener('click', (e) => {
         if(!e.target.closest('.left-container')) {
-            popup.forEach(x => x.classList.remove('open'))
+            doUnlock = true
+            if(unlock) {
+                popup.forEach(x => x.classList.remove('open'))
+                if (doUnlock) {
+                    bodyUnLock()
+                }
+            }
         }
     })
 }))
